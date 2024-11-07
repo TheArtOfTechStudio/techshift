@@ -1,6 +1,8 @@
+import {GoogleAnalytics} from '@next/third-parties/google'
 import type {Metadata} from 'next';
-import './globals.css';
+import Script from 'next/script';
 import {GeistSans} from 'geist/font/sans';
+import './globals.css';
 
 export const metadata: Metadata = {
 	title: 'TechShift Malta | Build, Learn, and Grow Together in Tech',
@@ -53,6 +55,8 @@ export default function RootLayout({
 		<body>
 		{children}
 		</body>
+		<GoogleAnalytics gaId="G-CKVKTREJE4"/>
+		<Script src={`https://cdn.cookie-script.com/s/9799dc3c12a240027f0f894f40cdc290.js`}/>
 		</html>
 	);
 }
