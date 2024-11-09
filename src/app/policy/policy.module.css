@@ -1,0 +1,44 @@
+.policy {
+    padding: 24px;
+}
+
+.policy h1 {
+    font-size: 2.4em;
+    margin-bottom: 32px;
+    color: var(--primary);
+}
+
+.policy h2 {
+    font-size: 1.8em;
+    margin-bottom: 24px;
+}
+
+.policy h3 {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.policy p,
+.policy ul li {
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.policy a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.policy ul {
+    padding-inline: 16px;
+}
+
+.policy ul li {
+}
+
+@media only screen and (min-width: 768px) {
+    .policy {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}

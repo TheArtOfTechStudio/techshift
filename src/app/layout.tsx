@@ -56,7 +56,7 @@ export default function RootLayout({
 		{children}
 		</body>
 		<GoogleAnalytics gaId="G-CKVKTREJE4"/>
-		<Script src={`https://cdn.cookie-script.com/s/9799dc3c12a240027f0f894f40cdc290.js`}/>
+		<Script type="text/javascript" src={'https://cdn.cookie-script.com/s/9799dc3c12a240027f0f894f40cdc290.js'}></Script>
 		</html>
 	);
 }
