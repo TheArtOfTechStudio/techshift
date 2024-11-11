@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 48px;
+    padding: 32px 24px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContent a {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--primary);
+    text-decoration: underline;
+    position: relative;
+}
+
+.footerContent a:before {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -16px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10% 90% 5% 95% / 89% 9% 91% 11%;
+}
+
+.footerContent p {
+    font-size: 12px;
+    opacity: 0.4;
+}

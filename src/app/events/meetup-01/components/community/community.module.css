@@ -1,0 +1,156 @@
+.community {
+   margin-top: 120px;
+}
+
+.container {
+    position: relative;
+    background-color: #E7E7E7;
+    min-height: 420px;
+}
+
+.communityDecorator {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 900;
+    position: relative;
+    color: #ffffff;
+    line-height: 0.95;
+    top: -24px;
+    /*z-index: 0;*/
+}
+
+.decoratorKubeTop {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -60px
+}
+
+.decoratorKubeBot {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+}
+
+.content {
+    padding-inline: 24px;
+    margin-top: 24px;
+}
+
+.content h3 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    padding-bottom: 32px;
+    gap: 16px;
+
+}
+
+.socials > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+
+.socials > a > svg {
+    width: 24px;
+    height: 24px;
+}
+
+a.x svg {
+    height: 24px;
+    fill: var(--text-on-primary);
+}
+
+@media only screen and (min-width: 768px) {
+    .communityDecorator {
+        font-size: 164px;
+        top: -40px
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .community {
+        padding-bottom: 64px;
+    }
+
+    .content {
+        display: flex;
+        margin-top: 64px;
+        position: relative;
+        bottom: -48px;
+    }
+
+    .content h3 {
+        font-size: 72px;
+        padding-right: 24px;
+        text-align: left;
+    }
+
+    .socials {
+        display: grid;
+        width: 212px;
+        height: 212px;
+        margin: 0;
+        gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .socials > a:nth-child(4) {
+        grid-column: 2/3;
+    }
+
+    .socials > a:last-child {
+        grid-column: 3/4;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        max-width: 1400px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .communityDecorator {
+        font-size: 16vw;
+        top: -3vw;
+    }
+
+    .content h3 {
+        font-size: 110px;
+        line-height: 0.98;
+        padding-right: 24px;
+        text-align: left;
+    }
+
+    .socials {
+        width: 288px;
+        height: 288px;
+        gap: 24px;
+    }
+
+    .socials > a {
+        width: 80px;
+        height: 80px;
+    }
+
+    .socials > a > svg {
+        width: 32px;
+        height: 32px;
+    }
+}

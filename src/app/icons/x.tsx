@@ -15,4 +15,4 @@ const X = () => {
 	)
 }
 
-export default X
+export default X;

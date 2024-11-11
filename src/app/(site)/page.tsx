@@ -1,16 +1,22 @@
-import styles from './page.module.css';
-import InfinityIcon from '@/app/infinity';
+import InfinityIcon from '@/app/(site)/infinity';
 import Telegram from '@/app/icons/telegram';
 import Instagram from '@/app/icons/instagram';
 import Linkedin from '@/app/icons/linkedin';
 import X from '@/app/icons/x';
 import Facebook from '@/app/icons/facebook';
+import Link from 'next/link';
+import LogoFullGreen from '@/app/(site)/logo-full-green';
+
+import styles from './page.module.css';
 
 export default function Home() {
 	return (
-		<main className={styles.hero}>
+		<div className={styles.hero}>
 			<div className={styles.header}>
-				<a href="">TECHSHIFT.COMMUNITY</a>
+				<Link href={'/'} className={styles.logoLink}>
+					<LogoFullGreen className={styles.logo} />
+				</Link>
+				<Link href={'/events/meetup-01'} className={styles.upcomingEvent}>Upcoming Event</Link>
 			</div>
 			<InfinityIcon className={styles.decorator}></InfinityIcon>
 			<div className={styles.container}>
@@ -37,7 +43,7 @@ export default function Home() {
 						<a href="https://www.linkedin.com/groups/10008642" target="_blank">
 							<Linkedin/>
 						</a>
-						<a href="https://x.com/techshift_mt" className={styles.x}>
+						<a href="https://x.com/techshift_mt" target="_blank" className={styles.x}>
 							<X/>
 						</a>
 						<a href="https://www.facebook.com/groups/techshift" target="_blank">
@@ -46,6 +52,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }

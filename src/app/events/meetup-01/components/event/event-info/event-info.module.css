@@ -1,0 +1,94 @@
+.info {
+    height: 100%;
+    padding: 24px;
+    position: relative;
+    container-type: inline-size;
+}
+
+.infoContent {
+    position: relative;
+    z-index: 1;
+}
+
+.infoContent span {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.infoContent h2 {
+    margin-top: 24px;
+    padding-bottom: 16px;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.eventDate {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.infoContent p {
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.infoIcon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1;
+}
+
+.agenda {
+    margin-top: 40px;
+}
+
+.agenda h4 {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.agenda > ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.agenda > ul > li {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.agenda > ul > li > b {
+    display: inline-block;
+    width: 112px;
+    font-weight: 900;
+    padding-right: 8px;
+}
+
+@container (min-width: 820px) {
+    .infoWrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .infoContainer {
+        display: flex;
+    }
+
+    .infoContent {
+        flex: 1;
+    }
+
+    .agenda {
+        width: 240px;
+        padding-top: 120px;
+        padding-left: 16px;
+        text-align: right;
+    }
+}
