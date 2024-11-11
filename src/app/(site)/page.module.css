@@ -1,4 +1,5 @@
 .hero {
+    display: grid;
     position: relative;
     z-index: 1;
     padding-inline: 16px;
@@ -13,7 +14,6 @@
     bottom: 0;
     margin: auto;
     z-index: -1;
-
 }
 
 .header,
@@ -26,11 +26,30 @@
 .header {
     height: 60px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-inline: 24px;
+    padding-inline: 16px;
     margin-top: 8px;
     border: 1px solid #333333;
     border-radius: 8px;
+}
+
+.logoLink {
+    line-height: 0;
+}
+
+.upcomingEvent {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
 }
 
 .container {
@@ -89,7 +108,10 @@
     align-items: center;
     margin-top: 32px;
 }
-.social div a {}
+
+.social div a {
+}
+
 .social div a svg {
     color: var(--primary);
     height: 32px;
@@ -102,7 +124,9 @@
 
 
 @media only screen and (min-width: 576px) {
-
+    .header {
+        padding-inline: 24px;
+    }
 }
 
 @media only screen and (min-width: 768px) {

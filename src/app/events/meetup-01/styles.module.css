@@ -1,0 +1,13 @@
+.meetup01 {
+    --secondary: #85C2E8;
+    --tertiary: #000000;
+
+    --text-on-secondary: #ffffff;
+    --text-on-tertiary: #ffff;
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}

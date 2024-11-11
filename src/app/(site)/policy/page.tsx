@@ -16,7 +16,7 @@ export default function Home() {
 			</p>
 
 			<p>
-				This Policy applies to our website <Link href={'/'}>techshift.community</Link> (&#34;Site&#34;),
+				This Policy applies to our website <Link href={'/public'}>techshift.community</Link> (&#34;Site&#34;),
 				including any other media form, media channel, mobile website, or mobile application related or
 				connected
 				thereto (collectively, &#34;Our Services&#34;). This policy aims to give you a clear understanding of

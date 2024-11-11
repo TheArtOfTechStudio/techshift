@@ -1,0 +1,197 @@
+.hero {
+    width: 100%;
+    height: 100dvh;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #85c2e8bd;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerContent {
+    padding: 16px;
+}
+
+.intro,
+.topic,
+.speaker {
+    color: var(--text-on-secondary);
+}
+
+.intro {
+    font-size: 32px
+}
+
+.topic {
+    font-size: 14vw;
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-block: 24px;
+}
+
+.speaker {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+}
+
+.controls {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.buttonPrimary {
+    background-color: var(--primary);
+    color: var(--text-on-primary);
+}
+
+.buttonTertiary {
+    background-color: var(--tertiary);
+    color: var(--text-on-tertiary);
+}
+
+.buttonIcon {
+    height: 20px;
+    padding-inline: 8px
+}
+
+.buttonDivider {
+    width: 1px;
+    height: 20px;
+    background-color: var(--text-on-primary);
+    margin-right: 8px;
+}
+
+.buttonText {
+}
+
+.speakerImage {
+    position: absolute;
+    left: -1%;
+    bottom: -120px;
+    z-index: -1;
+
+}
+
+.stampImage {
+    display: none;
+}
+
+.eventDateInfo {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-on-tertiary);
+}
+
+@media only screen and (min-width: 576px) {
+    .hero {
+        padding: 16px;
+    }
+
+    .topic {
+        font-size: 12vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding: 40px;
+    }
+
+    .bannerContent {
+        padding: 24px;
+    }
+
+    .topic {
+        font-size: 10vw;
+    }
+
+    .controls {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stampImage {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    .eventDateInfo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .bannerContent {
+        padding: 32px;
+    }
+
+    .topic {
+        font-size: 6vw;
+    }
+
+    .controls {
+        display: flex;
+        align-items: center;
+    }
+
+    .button {
+        width: fit-content;
+    }
+
+    .stampImage {
+        display: block;
+        position: absolute;
+        top: unset;
+        bottom: 24px;
+        right: 24px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        padding: 80px;
+    }
+
+    .bannerContent {
+        padding: 80px;
+    }
+
+    .controls {
+        width: fit-content;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
