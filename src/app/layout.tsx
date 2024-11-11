@@ -42,6 +42,9 @@ export const metadata: Metadata = {
 		title: 'TechShift Malta | Build, Learn, and Grow Together in Tech',
 		description: 'Join TechShift Community Malta to build, learn, and grow together through engaging meetups and networking events across diverse technology domains.',
 		images: 'https://techshift.community/twitter-image.png',
+	},
+	other: {
+		'google-site-verification': 'fmrXEtkHst_ndUGm_P1oqVP5uI9SCpRVDD368zAzInQ'
 	}
 };
 
