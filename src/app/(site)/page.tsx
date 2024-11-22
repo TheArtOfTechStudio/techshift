@@ -23,7 +23,7 @@ export default function Home() {
 				<div className={styles.content}>
 					<h1>Launching soon</h1>
 					<p className={styles.p1}>
-						We are thrilled to announce that Malta TechSift Community is launching soon. A new space for
+						We are thrilled to announce that Malta TechShift Community is launching soon. A new space for
 						innovators, tech enthusiasts, and collaborators is on its way.
 					</p>
 					<p>
